@@ -7,3 +7,11 @@ data_ingestion:
  unzip_data: artifacts/data_ingestion
  train_data: artifacts/data_ingestion
  test_data: artifacts/data_ingestion
+
+
+
+data_evaluation:
+ root_url: artifacts/data_evaluation
+ data_directory: artifacts\data_ingestion\healthcare-dataset-stroke-data.csv
+ validation_status: artifacts/data_evaluation/validation_status.txt
+ 
