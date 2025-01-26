@@ -1,0 +1,6 @@
+[ 2025-01-26 13:04:32,859:INFO:2638354798:Data downloaded from: https://github.com/Robin-star-lab/stroke_zip/raw/refs/heads/main/stroke_zip/healthcare-dataset-stroke-data.zip into: artifacts/data_ingestion/data.zip]
+[ 2025-01-26 13:04:33,191:INFO:2638354798:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-01-26 13:23:13,342:INFO:1327809713:Data downloaded from: https://github.com/Robin-star-lab/stroke_zip/raw/refs/heads/main/stroke_zip/healthcare-dataset-stroke-data.zip into: artifacts/data_ingestion/data.zip]
+[ 2025-01-26 13:23:13,657:INFO:1327809713:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-01-26 13:27:02,588:INFO:3999868275:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-01-26 13:28:52,035:INFO:1458254983:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
