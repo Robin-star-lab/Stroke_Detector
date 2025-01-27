@@ -14,4 +14,13 @@ data_evaluation:
  root_url: artifacts/data_evaluation
  data_directory: artifacts\data_ingestion\healthcare-dataset-stroke-data.csv
  validation_status: artifacts/data_evaluation/validation_status.txt
+
+
+
+data_transformation:
+ root_url: artifacts/data_transfromation
+ data_directory: artifacts\data_ingestion\healthcare-dataset-stroke-data.csv
+ transform_data_path: artifacts/data_transformation
+ preprocessor_path: artifacts/data_transformation
+
  

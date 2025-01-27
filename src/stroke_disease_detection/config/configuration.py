@@ -1,6 +1,6 @@
 
 from src.constants import *
-from src.stroke_disease_detection.entities.entities import DataIngestionConfig,DataEvaluationConfig
+from src.stroke_disease_detection.entities.entities import DataIngestionConfig,DataEvaluationConfig,DataTransformationConfig
 from src.stroke_disease_detection.utils.common import read_yaml,create_directories
 
 
@@ -52,3 +52,28 @@ class DataEvaluationConfigurationManager:
         )
         
         return data_evaluation_config
+    
+    
+    
+
+class DataTransformationConfigurationManager():
+    def __init__(self,
+                 config_fie_path = CONFIG_FILE_PATH):
+        self.config = read_yaml(config_fie_path)
+        
+        create_directories([self.config.Artifacts_root])
+    
+    def get_data_transformation_config(self)->DataTransformationConfig:
+        config = self.config.data_transformation
+        
+        create_directories([config.root_url])
+        data_transformation_config = DataTransformationConfig(
+            root_url = config.root_url,
+            data_directory = config.data_directory,
+            transform_data_path = config.transform_data_path,
+            preprocessor_path = config.preprocessor_path
+        )
+        
+        return data_transformation_config
+    
+        

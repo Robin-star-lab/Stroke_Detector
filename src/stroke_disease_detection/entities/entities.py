@@ -16,4 +16,12 @@ class DataEvaluationConfig():
     data_directory: Path
     validation_status: str
     all_schema: str
+
+
+@dataclass
+class DataTransformationConfig():
+    root_url: Path
+    data_directory: Path
+    transform_data_path: Path
+    preprocessor_path: Path
     
