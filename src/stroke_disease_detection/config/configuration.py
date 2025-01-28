@@ -2,6 +2,7 @@
 from src.constants import *
 from src.stroke_disease_detection.entities.entities import DataIngestionConfig,DataEvaluationConfig,DataTransformationConfig,ModelTrainerConfig
 from src.stroke_disease_detection.utils.common import read_yaml,create_directories
+from src.stroke_disease_detection.entities.entities import ModelEvaluationConfig
 
 
 class ConfigurationManager:
@@ -106,4 +107,31 @@ class ModelTrainerConfigurationManager():
         )
         
         return get_model_trainer_config
+    
+    
+    
+    
+class ModelEvaluationConfigManager:
+    def __init__(self,
+                 config_file_path = CONFIG_FILE_PATH,
+                 params_fie_path = PARAMS_FILE_PATH):
+        self.config = read_yaml(config_file_path)
+        self.params = read_yaml(params_fie_path)
+        
+        create_directories([self.config.Artifacts_root])
+    
+    def get_model_evalaution(self)->ModelEvaluationConfig:
+        config = self.config.model_evaluation
+        params = self.params.parameters
+        create_directories([config.root_url])
+        model_evaluation_config = ModelEvaluationConfig(
+            root_url = config.root_url,
+            evaluation_data = config.evaluation_data,
+            model_path = config.model_path,
+            parameters = params,
+            epoch = params.epoch,
+            batch_size = params.batch_size
+        )
+        
+        return model_evaluation_config
         

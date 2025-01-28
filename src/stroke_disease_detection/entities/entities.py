@@ -37,3 +37,14 @@ class ModelTrainerConfig():
     epoch: int
     batch_size: int
     model_name: str
+    
+    
+
+@dataclass
+class ModelEvaluationConfig():
+    root_url: Path
+    evaluation_data: Path
+    model_path: Path
+    parameters: dict
+    epoch: int
+    batch_size: int

@@ -8,7 +8,6 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
 import pandas as pd
 from src.stroke_disease_detection.utils.common import read_yaml,create_directories
 
@@ -28,7 +27,7 @@ class ModelTrainer():
         Y = le.fit_transform(data.iloc[:,-1])
         Y = to_categorical(Y)
         # Split the data
-        x_train,x_test,y_train,y_test = train_test_split(X,Y,test_size=0.3,random_state=42)
+        
         # Initialize the model
         model = Sequential([
             Dense(64,activation='relu'),
@@ -38,6 +37,6 @@ class ModelTrainer():
         
         model.compile(loss='binary_crossentropy', optimizer='adam',metrics=['accuracy'])
         # Trian the model
-        model.fit(x_train, y_train,self.config.batch_size,self.config.epoch,verbose=2)
+        model.fit(X, Y,self.config.batch_size,self.config.epoch,verbose=2)
         # Evaluate the model
-        model.save(os.path.join(self.config.model_name,'model.h5'))
+        model.save(os.path.join(self.config.model_name,'model.keras'))
