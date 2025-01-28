@@ -5,5 +5,6 @@ scikit-learn
 ensure
 pyYAML
 imblearn
+tensorflow
 python-box
 -e .

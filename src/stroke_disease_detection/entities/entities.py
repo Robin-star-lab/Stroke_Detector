@@ -25,3 +25,15 @@ class DataTransformationConfig():
     transform_data_path: Path
     preprocessor_path: Path
     
+
+
+@dataclass
+class ModelTrainerConfig():
+    # configuration for model trainer
+    root_url: Path
+    train_data_path: Path
+    trained_model: Path
+    parameters: dict
+    epoch: int
+    batch_size: int
+    model_name: str

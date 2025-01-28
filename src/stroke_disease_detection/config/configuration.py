@@ -1,6 +1,6 @@
 
 from src.constants import *
-from src.stroke_disease_detection.entities.entities import DataIngestionConfig,DataEvaluationConfig,DataTransformationConfig
+from src.stroke_disease_detection.entities.entities import DataIngestionConfig,DataEvaluationConfig,DataTransformationConfig,ModelTrainerConfig
 from src.stroke_disease_detection.utils.common import read_yaml,create_directories
 
 
@@ -76,4 +76,34 @@ class DataTransformationConfigurationManager():
         
         return data_transformation_config
     
+
+
+
+
+class ModelTrainerConfigurationManager():
+    def __init__(self,
+                 config_file_path = CONFIG_FILE_PATH,
+                 params_file_path = PARAMS_FILE_PATH):
+        self.config = read_yaml(config_file_path)
+        self.param = read_yaml(params_file_path)
+        
+        create_directories([self.config.Artifacts_root])
+        
+    def get_model_trainer_config(self)->ModelTrainerConfig:
+        
+        config = self.config.model_trainer
+        params = self.param.parameters
+        create_directories([config.root_url])
+        
+        get_model_trainer_config = ModelTrainerConfig(
+            root_url = config.root_url,
+            train_data_path = config.train_data_path,
+            trained_model =config.trained_model,
+            model_name = config.model_name,
+            parameters = params,
+            epoch = params.epoch,
+            batch_size = params.batch_size
+        )
+        
+        return get_model_trainer_config
         
