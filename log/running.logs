@@ -48,3 +48,166 @@
 [ 2025-01-28 14:58:48,624:INFO:main:======Model Training Stage======Successfully Completed.]
 [ 2025-01-28 14:58:48,873:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [ 2025-01-28 14:58:51,006:INFO:main:======Model Evaluation Stage======Successfully Completed.]
+[ 2025-01-28 17:05:16,408:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-01-28 17:05:16,424:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-01-28 17:05:16,740:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-01-28 17:05:18,715:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-01-28 17:05:33,757:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-01-28 17:05:34,063:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[ 2025-01-28 17:05:36,944:INFO:main:======Model Evaluation Stage======Successfully Completed.]
+[ 2025-01-31 11:26:42,414:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.184:8080]
+[ 2025-01-31 11:26:42,434:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-01-31 11:26:59,054:INFO:_internal:127.0.0.1 - - [31/Jan/2025 11:26:59] "GET / HTTP/1.1" 200 -]
+[ 2025-01-31 11:27:01,365:INFO:_internal:127.0.0.1 - - [31/Jan/2025 11:27:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-01-31 11:27:19,679:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 18, in predict
+    age = int(request.form.get['age'])
+              ~~~~~~~~~~~~~~~~^^^^^^^
+TypeError: 'method' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 38, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [18] error message ['method' object is not subscriptable]
+[ 2025-01-31 11:27:19,689:INFO:_internal:127.0.0.1 - - [31/Jan/2025 11:27:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-01-31 11:35:43,079:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.184:8080]
+[ 2025-01-31 11:35:43,080:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-01-31 11:35:52,736:INFO:_internal:127.0.0.1 - - [31/Jan/2025 11:35:52] "GET / HTTP/1.1" 200 -]
+[ 2025-01-31 11:36:03,825:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 18, in predict
+    age = int(request.form.get(['age']))
+              ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'method' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 38, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [18] error message ['method' object is not subscriptable]
+[ 2025-01-31 11:36:03,850:INFO:_internal:127.0.0.1 - - [31/Jan/2025 11:36:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-01-31 14:25:08,460:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.3.22:8080]
+[ 2025-01-31 14:25:08,474:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-01-31 14:25:56,596:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:25:56] "GET / HTTP/1.1" 200 -]
+[ 2025-01-31 14:25:59,675:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:25:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-01-31 14:27:58,295:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.3.22:8080]
+[ 2025-01-31 14:27:58,296:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-01-31 14:28:17,069:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:28:17] "GET / HTTP/1.1" 200 -]
+[ 2025-01-31 14:28:17,229:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:28:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-01-31 14:29:47,284:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.3.22:8080]
+[ 2025-01-31 14:29:47,285:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-01-31 14:29:51,987:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:29:51] "GET / HTTP/1.1" 200 -]
+[ 2025-01-31 14:30:13,756:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 18, in predict
+    age = int(request.form.get(['age']))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\werkzeug\datastructures\structures.py", line 106, in get
+    rv = self[key]
+         ~~~~^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\werkzeug\datastructures\structures.py", line 234, in __getitem__
+    if key in self:
+       ^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 38, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [18] error message [unhashable type: 'list']
+[ 2025-01-31 14:30:13,768:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:30:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-01-31 14:31:20,107:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.5.180:8080]
+[ 2025-01-31 14:31:20,108:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-01-31 14:31:26,843:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:31:26] "GET / HTTP/1.1" 200 -]
+[ 2025-01-31 14:31:26,983:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:31:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-01-31 14:31:42,807:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 18, in predict
+    age = int(request.form.get(['age']))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\werkzeug\datastructures\structures.py", line 106, in get
+    rv = self[key]
+         ~~~~^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\werkzeug\datastructures\structures.py", line 234, in __getitem__
+    if key in self:
+       ^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 38, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [18] error message [unhashable type: 'list']
+[ 2025-01-31 14:31:42,816:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:31:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]

@@ -29,6 +29,11 @@ def save_json(preprocessor,filepath):
     with open(filepath,'wb') as f:
         pickle.dump(preprocessor,f)
         
+
+@ensure_annotations
+def load_json(filepath):
+    with open(filepath,'rb') as f:
         
+        preprocessor = pickle.load(f)
     
-        
+        return preprocessor
