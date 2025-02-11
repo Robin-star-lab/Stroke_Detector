@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <title>Stroke Detection System</title>
+
+<style>
+    body{
+    background:#edf5fc;
+    width:100%;
+    height:fit-content;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.Results_container{
+    width:50%;
+    margin:auto;
+    padding:30px 2px;
+    margin-top:30px;
+}
+    .result-box {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        animation: fadeIn 1s ease-in-out;
+        width:100%;
+        text-align:center;
+        margin:auto;
+       
+      
+    }
+.result-box h2{
+    color:rgb(63, 181, 236);
+    
+}
+.result-box p{
+    font-size:18px;
+}
+.bi-exclamation-triangle{
+    color:red;
+    animation: pulse 1s infinite;
+}
+.bi-check-circle{
+    color:green;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+    .stroke {
+        color: red;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .no-stroke {
+        color: green;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .advice {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 16px;
+        color: white;
+        background: teal;
+        border: none;
+        text-decoration: none;
+        padding:10px 70px;
+        border-radius:9px;
+    }
+
+    .btn:hover {
+        background:rgb(63, 181, 236);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    footer{
+  background:#fff;
+  height:10%;
+  text-align:center;
+}
+footer span{
+  color:rgb(63, 181, 236);
+  font-weight:bold;
+  font-family:'montserrat';
+  font-size:18px;
+}
+footer p{
+  color:#333;
+  margin:auto;
+}
+footer svg{
+  color:teal;
+  width:20px;
+  height:20px;
+}
+</style>
+</head>
+<body>
+<div class="Results_container">
+    <div class="result-box">
+        <h2>Prediction Result</h2>
+
+
+        {% if prediction == "Stroke" %}
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+            <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+            <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+          </svg>
+            <p class="stroke">High Stroke Risk</p>
+            <p class="advice">Consider consulting a doctor for further assessment.</p>
+
+            {% else %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+              </svg>
+            <p class="no-stroke">No Stroke Risk Detected</p>
+            <p class="advice">Keep maintaining a healthy lifestyle!</p>
+
+            {% endif %}
+    
+        
+        <a href="{{ url_for('index') }}" class="btn btn-primary">Try Again</a>
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 <span>Str<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
+      </svg>keCheck</span>| All Rights Reserved.</p>  
+  </footer>
+</body>
+</html>
+
