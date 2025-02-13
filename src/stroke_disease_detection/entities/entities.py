@@ -48,3 +48,4 @@ class ModelEvaluationConfig():
     parameters: dict
     epoch: int
     batch_size: int
+    model_name: str

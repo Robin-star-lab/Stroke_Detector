@@ -128,6 +128,7 @@ class ModelEvaluationConfigManager:
             root_url = config.root_url,
             evaluation_data = config.evaluation_data,
             model_path = config.model_path,
+            model_name = config.model_name,
             parameters = params,
             epoch = params.epoch,
             batch_size = params.batch_size

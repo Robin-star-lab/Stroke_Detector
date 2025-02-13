@@ -211,3 +211,944 @@ Traceback (most recent call last):
     raise CustomException(e,sys)
 Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [18] error message [unhashable type: 'list']
 [ 2025-01-31 14:31:42,816:INFO:_internal:127.0.0.1 - - [31/Jan/2025 14:31:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-11 10:39:54,375:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-11 10:39:54,411:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-11 10:39:54,726:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-11 10:39:56,864:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-11 10:40:20,280:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-11 10:40:20,789:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[ 2025-02-11 10:40:23,009:INFO:main:======Model Evaluation Stage======Successfully Completed.]
+[ 2025-02-11 12:35:10,509:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.101:8080]
+[ 2025-02-11 12:35:10,536:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-11 12:35:30,422:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:35:30] "GET / HTTP/1.1" 200 -]
+[ 2025-02-11 12:35:31,075:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:35:31] "GET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1" 200 -]
+[ 2025-02-11 12:35:31,077:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:35:31] "GET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1" 200 -]
+[ 2025-02-11 12:35:31,078:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:35:31] "GET /static/images/Healthcare.jpg HTTP/1.1" 200 -]
+[ 2025-02-11 12:35:31,113:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:35:31] "GET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1" 200 -]
+[ 2025-02-11 12:35:31,171:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:35:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-11 12:36:58,412:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:36:58] "GET /?age=3&gender=Male&hypertension=0&heart_disease=1&ever_married=Yes&work_type=Private&Residence_type=Urban&avg_glucose_level=0.02&bmi=0&smoking_status=never+smoked HTTP/1.1" 200 -]
+[ 2025-02-11 12:36:58,461:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:36:58] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 12:36:58,500:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:36:58] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 12:36:58,507:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:36:58] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 12:36:58,516:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:36:58] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 12:38:13,006:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:38:13] "GET /?age=20&gender=Male&hypertension=0&heart_disease=0&ever_married=Yes&work_type=Self-employed&Residence_type=Urban&avg_glucose_level=0.01&bmi=0.1&smoking_status=never+smoked HTTP/1.1" 200 -]
+[ 2025-02-11 12:38:13,045:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:38:13] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 12:38:13,075:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:38:13] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 12:38:13,080:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:38:13] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 12:38:13,102:INFO:_internal:127.0.0.1 - - [11/Feb/2025 12:38:13] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 14:51:33,892:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.101:8080]
+[ 2025-02-11 14:51:33,893:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-11 14:52:03,706:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:52:03] "GET / HTTP/1.1" 200 -]
+[ 2025-02-11 14:52:03,756:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:52:03] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 14:52:03,764:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:52:03] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 14:52:03,780:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:52:03] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 14:52:03,830:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:52:03] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 14:53:06,824:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:53:06] "GET /?age=12&gender=Male&hypertension=0&heart_disease=Choose...&ever_married=Yes&work_type=Private&Residence_type=Urban&avg_glucose_level=0.01&bmi=0.1&smoking_status=never+smoked HTTP/1.1" 200 -]
+[ 2025-02-11 14:53:06,879:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:53:06] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 14:53:06,922:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:53:06] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 14:53:06,926:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:53:06] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 14:53:06,931:INFO:_internal:127.0.0.1 - - [11/Feb/2025 14:53:06] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:08:47,983:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.101:8080]
+[ 2025-02-11 15:08:47,984:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-11 15:08:55,868:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:08:55] "GET / HTTP/1.1" 200 -]
+[ 2025-02-11 15:08:55,936:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:08:55] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:08:55,946:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:08:55] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:08:55,965:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:08:55] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:08:56,005:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:08:56] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:10:09,367:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:09] "GET /?age=20&gender=Male&hypertension=0&heart_disease=0&ever_married=Yes&work_type=Choose...&Residence_type=Urban&avg_glucose_level=0.01&bmi=0.1&smoking_status=never+smoked HTTP/1.1" 200 -]
+[ 2025-02-11 15:10:09,403:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:09] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:10:09,448:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:09] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:10:09,468:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:09] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:10:09,486:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:09] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:10:56,995:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:56] "GET /?age=1&gender=Male&hypertension=0&heart_disease=0&ever_married=Yes&work_type=Choose...&Residence_type=Choose...&avg_glucose_level=0.01&bmi=0.1&smoking_status=formerly+smoked HTTP/1.1" 200 -]
+[ 2025-02-11 15:10:57,038:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:57] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:10:57,076:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:57] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:10:57,090:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:57] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:10:57,095:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:10:57] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:21:02,869:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.101:8080]
+[ 2025-02-11 15:21:02,873:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-11 15:21:10,071:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:21:10] "GET / HTTP/1.1" 200 -]
+[ 2025-02-11 15:21:10,155:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:21:10] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:21:10,164:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:21:10] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:21:10,215:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:21:10] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:21:10,245:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:21:10] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:22:07,349:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:22:07] "GET /?age=21&gender=Male&hypertension=0&heart_disease=0&ever_married=Yes&work_type=Self-employed&Residence_type=Urban&avg_glucose_level=0.01&bmi=0.1&smoking_status=never+smoked HTTP/1.1" 200 -]
+[ 2025-02-11 15:22:07,391:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:22:07] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:22:07,420:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:22:07] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:22:07,426:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:22:07] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:22:07,428:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:22:07] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:43:16,170:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.7.155:8080]
+[ 2025-02-11 15:43:16,171:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-11 15:43:38,836:ERROR:app:Exception on / [GET]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 12, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\templates\index.html", line 383, in top-level template code
+    <div class="form" id="predictionForm" action="{{url_for('/predict')}}" method="POST">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/predict'. Did you mean 'predict' instead?
+[ 2025-02-11 15:43:39,139:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:43:39] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[ 2025-02-11 15:43:40,515:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:43:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-11 15:46:14,395:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.7.155:8080]
+[ 2025-02-11 15:46:14,396:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-11 15:46:22,513:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:46:22] "GET / HTTP/1.1" 200 -]
+[ 2025-02-11 15:46:22,887:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:46:22] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:46:22,891:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:46:22] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:46:22,892:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:46:22] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:46:22,893:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:46:22] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:47:29,818:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:47:29] "GET /?age=18&gender=Male&hypertension=0&heart_disease=0&ever_married=No&work_type=Self-employed&Residence_type=Urban&avg_glucose_level=0.01&bmi=0.1&smoking_status=never+smoked HTTP/1.1" 200 -]
+[ 2025-02-11 15:47:29,872:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:47:29] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:47:29,900:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:47:29] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:47:29,905:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:47:29] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-11 15:47:29,921:INFO:_internal:127.0.0.1 - - [11/Feb/2025 15:47:29] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:56:15,299:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.220:8080]
+[ 2025-02-12 17:56:15,356:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-12 17:57:08,922:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:08] "GET / HTTP/1.1" 200 -]
+[ 2025-02-12 17:57:08,922:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:08] "GET / HTTP/1.1" 200 -]
+[ 2025-02-12 17:57:10,764:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:10] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:57:10,774:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:10] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:57:10,797:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:10] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:57:10,800:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:10] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:57:10,863:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:10] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:57:11,373:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:11] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:57:11,651:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:11] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:57:11,888:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:11] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:57:13,969:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-12 17:57:13,973:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:57:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-12 17:58:09,087:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:58:09] "GET /?age=18&gender=Male&hypertension=0&heart_disease=0&ever_married=Yes&work_type=Choose...&Residence_type=Urban&avg_glucose_level=0.01&bmi=0.1&smoking_status=never+smoked HTTP/1.1" 200 -]
+[ 2025-02-12 17:58:09,365:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:58:09] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:58:09,366:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:58:09] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:58:09,375:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:58:09] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 17:58:09,400:INFO:_internal:127.0.0.1 - - [12/Feb/2025 17:58:09] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:05:21,755:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.220:8080]
+[ 2025-02-12 18:05:21,755:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-12 18:06:37,744:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:06:37] "GET / HTTP/1.1" 200 -]
+[ 2025-02-12 18:06:38,024:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:06:38] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:06:38,025:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:06:38] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:06:38,031:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:06:38] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:06:38,124:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:06:38] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:06:41,619:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:06:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-12 18:10:56,479:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.220:8080]
+[ 2025-02-12 18:10:56,479:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-12 18:11:17,210:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:11:17] "GET / HTTP/1.1" 200 -]
+[ 2025-02-12 18:11:18,463:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:11:18] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:11:18,463:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:11:18] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:11:18,584:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:11:18] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:11:18,634:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:11:18] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:11:20,755:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:11:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-12 18:12:22,106:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:12:22] "GET /?age=15&gender=Male&hypertension=1&heart_disease=0&ever_married=Yes&work_type=Govt_job&Residence_type=Urban&avg_glucose_level=0.01&bmi=0.1&smoking_status=formerly+smoked HTTP/1.1" 200 -]
+[ 2025-02-12 18:12:22,161:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:12:22] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:12:22,166:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:12:22] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:12:22,173:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:12:22] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-12 18:12:22,209:INFO:_internal:127.0.0.1 - - [12/Feb/2025 18:12:22] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 12:57:12,779:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.4.233:8080]
+[ 2025-02-13 12:57:12,794:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 12:57:49,587:INFO:_internal:127.0.0.1 - - [13/Feb/2025 12:57:49] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 12:57:55,504:INFO:_internal:127.0.0.1 - - [13/Feb/2025 12:57:55] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 12:57:55,507:INFO:_internal:127.0.0.1 - - [13/Feb/2025 12:57:55] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 12:57:55,549:INFO:_internal:127.0.0.1 - - [13/Feb/2025 12:57:55] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 12:57:55,905:INFO:_internal:127.0.0.1 - - [13/Feb/2025 12:57:55] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 12:57:56,148:INFO:_internal:127.0.0.1 - - [13/Feb/2025 12:57:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 13:01:37,843:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:01:37] "GET /?age=15&gender=Male&hypertension=0&heart_disease=1&ever_married=No&work_type=Self-employed&Residence_type=Urban&avg_glucose_level=0.01&bmi=0.1&smoking_status=formerly+smoked HTTP/1.1" 200 -]
+[ 2025-02-13 13:01:37,960:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:01:37] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:01:37,983:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:01:37] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:01:38,014:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:01:38] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:01:38,034:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:01:38] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:05:51,676:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:05:51] "GET /?age=6&gender=Male&hypertension=0&heart_disease=0&ever_married=Yes&work_type=Self-employed&Residence_type=Urban&avg_glucose_level=0.01&bmi=0.1&smoking_status=never+smoked HTTP/1.1" 200 -]
+[ 2025-02-13 13:05:51,734:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:05:51] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:05:51,745:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:05:51] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:05:51,768:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:05:51] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:05:51,785:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:05:51] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:10:03,546:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.4.233:8080]
+[ 2025-02-13 13:10:03,547:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 13:10:10,228:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:10:10] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 13:10:10,581:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:10:10] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:10:10,634:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:10:10] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:10:10,650:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:10:10] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:10:10,709:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:10:10] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:17:28,974:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.4.233:8080]
+[ 2025-02-13 13:17:28,975:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 13:17:40,648:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:17:40] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 13:17:40,874:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:17:40] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:17:40,950:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:17:40] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:17:41,008:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:17:41] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:17:41,022:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:17:41] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:18:34,269:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 18, in predict
+    data = CustomData(
+           ^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 35, in __init__
+    self.worktype = worktype
+                    ^^^^^^^^
+NameError: name 'worktype' is not defined. Did you mean: 'work_type'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [18] error message [name 'worktype' is not defined]
+[ 2025-02-13 13:18:34,417:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:18:34] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 13:22:58,169:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.4.233:8080]
+[ 2025-02-13 13:22:58,169:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 13:23:12,785:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:23:12] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 13:23:13,059:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:23:13] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:23:13,121:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:23:13] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:23:13,154:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:23:13] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:23:13,182:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:23:13] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:23:54,432:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 18, in predict
+    data = CustomData(
+           ^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 35, in __init__
+    self.work_type = worktype
+                     ^^^^^^^^
+NameError: name 'worktype' is not defined. Did you mean: 'work_type'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [18] error message [name 'worktype' is not defined]
+[ 2025-02-13 13:23:54,450:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:23:54] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 13:28:44,822:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.4.233:8080]
+[ 2025-02-13 13:28:44,823:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 13:28:51,779:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:28:51] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 13:28:52,955:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:28:52] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:28:53,001:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:28:53] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:28:53,057:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:28:53] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:28:53,138:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:28:53] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 13:28:53,542:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:28:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 13:29:46,480:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 35, in predict
+    predictions = prediction.predict(final_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 12, in predict
+    input_data = self.preprocessor.transform(input_data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1059, in transform
+    check_is_fitted(self)
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\validation.py", line 1757, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [35] error message [This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+[ 2025-02-13 13:29:46,624:INFO:_internal:127.0.0.1 - - [13/Feb/2025 13:29:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 14:04:07,963:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.82:8080]
+[ 2025-02-13 14:04:08,003:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 14:05:14,127:INFO:_internal:127.0.0.1 - - [13/Feb/2025 14:05:14] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 14:05:17,332:INFO:_internal:127.0.0.1 - - [13/Feb/2025 14:05:17] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 14:05:17,336:INFO:_internal:127.0.0.1 - - [13/Feb/2025 14:05:17] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 14:05:17,338:INFO:_internal:127.0.0.1 - - [13/Feb/2025 14:05:17] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 14:05:17,386:INFO:_internal:127.0.0.1 - - [13/Feb/2025 14:05:17] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 14:05:19,361:INFO:_internal:127.0.0.1 - - [13/Feb/2025 14:05:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 14:07:06,369:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 35, in predict
+    predictions = prediction.predict(final_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 12, in predict
+    input_data = self.preprocessor.transform(input_data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1059, in transform
+    check_is_fitted(self)
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\validation.py", line 1757, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [35] error message [This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+[ 2025-02-13 14:07:06,581:INFO:_internal:127.0.0.1 - - [13/Feb/2025 14:07:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 14:38:41,615:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 14:38:41,616:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 14:38:42,180:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 14:38:48,293:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 14:39:21,820:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 14:39:22,121:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[ 2025-02-13 15:50:13,863:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 15:50:13,864:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 15:50:14,114:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 15:50:17,128:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 15:50:31,784:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 15:50:32,150:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[ 2025-02-13 16:01:56,814:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.82:8080]
+[ 2025-02-13 16:01:56,816:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 16:02:43,353:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 16:02:43,353:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 16:02:43,412:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 16:02:44,339:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 16:02:51,675:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 16:02:51,798:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[ 2025-02-13 16:14:28,164:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 16:14:28,165:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 16:14:28,243:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 16:14:29,175:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 16:14:36,102:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 16:14:36,222:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[ 2025-02-13 16:44:18,815:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 16:44:18,817:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 16:44:19,013:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 16:44:20,858:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 16:44:34,069:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 16:44:34,322:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[ 2025-02-13 16:55:45,983:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 16:55:45,984:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 16:55:46,051:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 16:55:46,870:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 16:55:53,807:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 16:55:53,906:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[ 2025-02-13 17:01:42,242:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:01:42,243:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:01:42,303:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:01:43,205:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:03:52,281:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:03:52,282:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:03:52,345:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:03:53,018:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:03:59,651:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 17:03:59,747:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[ 2025-02-13 17:16:27,221:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:16:27,221:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:16:27,287:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:16:28,114:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:16:34,904:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 17:17:49,121:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:17:49,121:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:17:49,177:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:17:49,855:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:17:56,867:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 17:30:25,567:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:30:25,568:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:30:25,645:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:30:26,573:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:30:34,362:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 17:33:29,456:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:33:29,457:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:33:29,517:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:33:30,240:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:33:37,142:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 17:39:33,784:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:39:33,784:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:39:33,846:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:39:34,592:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:39:41,332:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 17:41:03,483:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:41:03,485:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:41:03,547:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:41:04,284:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:41:11,178:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 17:41:15,990:INFO:main:======Model Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:46:40,104:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.7.140:8080]
+[ 2025-02-13 17:46:40,105:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 17:47:16,011:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:47:16] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 17:47:16,875:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:47:16] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 17:47:16,889:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:47:16] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 17:47:16,907:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:47:16] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 17:47:17,023:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:47:17] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 17:47:17,069:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:47:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 17:50:35,228:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:50:35,229:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:50:35,289:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:50:35,950:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:50:42,670:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 17:52:05,082:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 17:52:05,083:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 17:52:05,135:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:52:05,883:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 17:52:13,033:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 17:52:18,025:INFO:main:======Model Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 17:52:57,858:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.7.140:8080]
+[ 2025-02-13 17:52:57,858:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 17:53:11,524:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:53:11] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 17:53:12,084:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:53:12] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 17:53:12,121:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:53:12] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 17:53:12,139:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:53:12] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 17:53:12,152:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:53:12] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 17:53:12,325:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:53:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 17:54:01,494:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 35, in predict
+    predictions = prediction.predict(final_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 12, in predict
+    input_data = self.preprocessor.transform(input_data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1059, in transform
+    check_is_fitted(self)
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\validation.py", line 1757, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [35] error message [This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+[ 2025-02-13 17:54:01,739:INFO:_internal:127.0.0.1 - - [13/Feb/2025 17:54:01] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 18:05:34,178:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.7.140:8080]
+[ 2025-02-13 18:05:34,179:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 18:05:39,088:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:05:39] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 18:05:39,426:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:05:39] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:05:39,436:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:05:39] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:05:39,447:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:05:39] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:05:39,471:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:05:39] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:06:24,025:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 35, in predict
+    my_predictions = prediction.predict(final_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 12, in predict
+    input_data = self.preprocessor.transform(input_data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1059, in transform
+    check_is_fitted(self)
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\validation.py", line 1757, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [35] error message [This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+[ 2025-02-13 18:06:24,040:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:06:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 18:16:56,751:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 18:16:56,752:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 18:16:56,810:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 18:23:24,726:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 18:23:24,727:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 18:23:24,793:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 18:26:54,368:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 18:26:54,368:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 18:26:54,433:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 18:26:55,242:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 18:27:02,068:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 18:27:06,967:INFO:main:======Model Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 18:27:32,560:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.7.140:8080]
+[ 2025-02-13 18:27:32,560:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 18:27:43,861:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:27:43] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 18:27:43,911:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:27:43] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:27:43,916:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:27:43] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:27:43,922:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:27:43] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:27:43,989:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:27:43] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:29:51,906:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 35, in predict
+    my_predictions = prediction.predict(final_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 12, in predict
+    input_data = self.preprocessor.transform(input_data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1059, in transform
+    check_is_fitted(self)
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\validation.py", line 1757, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [35] error message [This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+[ 2025-02-13 18:29:51,918:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:29:51] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 18:32:01,453:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:32:01] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 18:32:01,943:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:32:01] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:32:01,951:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:32:01] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:32:01,978:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:32:01] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:32:02,025:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:32:02] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:32:02,286:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:32:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 18:32:47,908:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 35, in predict
+    my_predictions = prediction.predict(final_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 12, in predict
+    input_data = self.preprocessor.transform(input_data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1059, in transform
+    check_is_fitted(self)
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\validation.py", line 1757, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [35] error message [This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+[ 2025-02-13 18:32:47,917:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:32:47] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 18:35:42,393:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.7.140:8080]
+[ 2025-02-13 18:35:42,394:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 18:36:16,650:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:36:16] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 18:36:16,680:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:36:16] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:36:16,690:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:36:16] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:36:16,708:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:36:16] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:36:16,739:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:36:16] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:37:08,053:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 35, in predict
+    my_predictions = prediction.predict(final_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 12, in predict
+    input_data = self.preprocessor.transform(input_data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1059, in transform
+    check_is_fitted(self)
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\validation.py", line 1757, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [35] error message [This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+[ 2025-02-13 18:37:08,066:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:37:08] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 18:38:48,092:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.7.140:8080]
+[ 2025-02-13 18:38:48,092:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 18:38:48,162:INFO:_internal: * Restarting with stat]
+[ 2025-02-13 18:38:59,436:WARNING:_internal: * Debugger is active!]
+[ 2025-02-13 18:38:59,447:INFO:_internal: * Debugger PIN: 124-871-344]
+[ 2025-02-13 18:39:35,366:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:39:35] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 18:39:35,407:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:39:35] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:39:35,427:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:39:35] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:39:35,455:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:39:35] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:39:35,468:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:39:35] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 18:40:29,052:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 35, in predict
+    my_predictions = prediction.predict(final_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\src\stroke_disease_detection\pipeline\prediction_pipeline.py", line 12, in predict
+    input_data = self.preprocessor.transform(input_data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\compose\_column_transformer.py", line 1059, in transform
+    check_is_fitted(self)
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\sklearn\utils\validation.py", line 1757, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\stroke\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py", line 40, in predict
+    raise CustomException(e,sys)
+Exceptions.CustomException: Error occured in python script no [C:\Users\Robin Aluma\Desktop\Stroke_Detection\app.py] line no [35] error message [This ColumnTransformer instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.]
+[ 2025-02-13 18:40:29,063:INFO:_internal:127.0.0.1 - - [13/Feb/2025 18:40:29] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 19:12:47,484:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.7.140:8080]
+[ 2025-02-13 19:12:47,485:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 19:12:47,490:INFO:_internal: * Restarting with stat]
+[ 2025-02-13 19:13:03,084:WARNING:_internal: * Debugger is active!]
+[ 2025-02-13 19:13:03,103:INFO:_internal: * Debugger PIN: 124-871-344]
+[ 2025-02-13 19:18:45,361:INFO:_internal:127.0.0.1 - - [13/Feb/2025 19:18:45] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 19:18:45,534:INFO:_internal:127.0.0.1 - - [13/Feb/2025 19:18:45] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 19:18:45,551:INFO:_internal:127.0.0.1 - - [13/Feb/2025 19:18:45] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 19:18:45,622:INFO:_internal:127.0.0.1 - - [13/Feb/2025 19:18:45] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 19:18:45,680:INFO:_internal:127.0.0.1 - - [13/Feb/2025 19:18:45] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 19:18:47,306:INFO:_internal:127.0.0.1 - - [13/Feb/2025 19:18:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 19:57:06,930:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.144:8080]
+[ 2025-02-13 19:57:06,976:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 19:57:07,021:INFO:_internal: * Restarting with stat]
+[ 2025-02-13 19:59:25,224:WARNING:_internal: * Debugger is active!]
+[ 2025-02-13 19:59:25,233:INFO:_internal: * Debugger PIN: 124-871-344]
+[ 2025-02-13 20:00:40,308:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:00:40] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 20:00:40,641:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:00:40] "GET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1" 200 -]
+[ 2025-02-13 20:00:40,657:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:00:40] "GET /static/images/Healthcare.jpg HTTP/1.1" 200 -]
+[ 2025-02-13 20:00:40,666:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:00:40] "GET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1" 200 -]
+[ 2025-02-13 20:00:41,318:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:00:41] "GET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1" 200 -]
+[ 2025-02-13 20:00:42,321:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:00:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 20:01:35,709:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:01:35] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 20:01:36,153:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:01:36] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -]
+[ 2025-02-13 20:01:36,173:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:01:36] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -]
+[ 2025-02-13 20:01:36,424:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:01:36] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=lfiBuErdiz3Qs6Uqiptt HTTP/1.1" 200 -]
+[ 2025-02-13 20:01:36,439:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:01:36] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -]
+[ 2025-02-13 20:16:45,809:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 20:16:45,809:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 20:16:46,006:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 20:25:26,712:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 20:25:26,712:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 20:25:26,774:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 20:35:04,303:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 20:35:04,304:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 20:35:04,363:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 20:35:06,161:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 20:35:19,548:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 20:35:24,243:INFO:main:======Model Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 20:36:11,214:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.144:8080]
+[ 2025-02-13 20:36:11,216:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 20:36:11,223:INFO:_internal: * Restarting with stat]
+[ 2025-02-13 20:36:22,344:WARNING:_internal: * Debugger is active!]
+[ 2025-02-13 20:36:22,354:INFO:_internal: * Debugger PIN: 124-871-344]
+[ 2025-02-13 20:36:42,841:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:36:42] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 20:36:43,086:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:36:43] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:36:43,184:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:36:43] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:36:43,237:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:36:43] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:36:43,239:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:36:43] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:37:27,330:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:37:27] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 20:37:27,397:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:37:27] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:37:27,401:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:37:27] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:37:27,537:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:37:27] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=XWPtZtxdX4gdMDH3lpJF HTTP/1.1" 200 -]
+[ 2025-02-13 20:46:30,421:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 20:46:30,423:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 20:46:30,537:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 20:46:32,039:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 20:46:45,993:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 20:46:52,566:INFO:main:======Model Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 20:47:23,130:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.144:8080]
+[ 2025-02-13 20:47:23,130:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 20:47:23,137:INFO:_internal: * Restarting with stat]
+[ 2025-02-13 20:47:34,199:WARNING:_internal: * Debugger is active!]
+[ 2025-02-13 20:47:34,216:INFO:_internal: * Debugger PIN: 124-871-344]
+[ 2025-02-13 20:48:04,940:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:48:04] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 20:48:08,804:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:48:08] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:48:08,826:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:48:08] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:48:08,935:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:48:08] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:48:09,044:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:48:09] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:48:10,170:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:48:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 20:49:16,108:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:49:16] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 20:49:16,178:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:49:16] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:49:16,189:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:49:16] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[ 2025-02-13 20:49:16,328:INFO:_internal:127.0.0.1 - - [13/Feb/2025 20:49:16] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=OEoy7G2rxgJotxWntElR HTTP/1.1" 200 -]
+[ 2025-02-13 21:00:13,641:INFO:_internal: * Detected change in 'c:\\users\\robin aluma\\desktop\\stroke_detection\\src\\stroke_disease_detection\\components\\data_transformation.py', reloading]
+[ 2025-02-13 21:00:14,627:INFO:_internal: * Restarting with stat]
+[ 2025-02-13 21:01:04,322:INFO:data_ingestion:Extracted the zipfile: artifacts/data_ingestion/data.zip into: artifacts/data_ingestion]
+[ 2025-02-13 21:01:04,322:INFO:main:======Data Ingestion Stage======Successfully Completed.]
+[ 2025-02-13 21:01:04,411:INFO:main:======Data Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 21:01:05,099:INFO:main:======Data Transformation Stage======Successfully Completed.]
+[ 2025-02-13 21:01:10,917:INFO:main:======Model Training Stage======Successfully Completed.]
+[ 2025-02-13 21:01:15,266:INFO:main:======Model Evaluation Stage======Successfully Completed.]
+[ 2025-02-13 21:01:48,217:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.144:8080]
+[ 2025-02-13 21:01:48,217:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 21:01:48,221:INFO:_internal: * Restarting with stat]
+[ 2025-02-13 21:01:58,549:WARNING:_internal: * Debugger is active!]
+[ 2025-02-13 21:01:58,558:INFO:_internal: * Debugger PIN: 124-871-344]
+[ 2025-02-13 21:02:11,224:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:11] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 21:02:11,809:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:11] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:02:11,812:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:11] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:02:11,898:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:11] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:02:12,020:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:12] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:02:12,396:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[ 2025-02-13 21:02:53,008:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:53] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 21:02:53,065:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:53] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:02:53,066:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:53] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:02:53,164:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:02:53] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=KAoXpjGD9epwzJIu3Mso HTTP/1.1" 200 -]
+[ 2025-02-13 21:17:51,987:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.144:8080]
+[ 2025-02-13 21:17:51,988:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 21:17:51,991:INFO:_internal: * Restarting with stat]
+[ 2025-02-13 21:18:02,448:WARNING:_internal: * Debugger is active!]
+[ 2025-02-13 21:18:02,457:INFO:_internal: * Debugger PIN: 124-871-344]
+[ 2025-02-13 21:18:24,000:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:18:24] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 21:18:24,308:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:18:24] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:18:24,328:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:18:24] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:18:24,400:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:18:24] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:18:24,425:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:18:24] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:19:04,032:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:19:04] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[ 2025-02-13 21:19:04,085:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:19:04] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:19:04,088:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:19:04] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:19:04,197:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:19:04] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=35RA0aqcUixoRaoTsbMb HTTP/1.1" 200 -]
+[ 2025-02-13 21:37:10,385:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.17.6.144:8080]
+[ 2025-02-13 21:37:10,386:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[ 2025-02-13 21:37:10,389:INFO:_internal: * Restarting with stat]
+[ 2025-02-13 21:37:21,784:WARNING:_internal: * Debugger is active!]
+[ 2025-02-13 21:37:21,795:INFO:_internal: * Debugger PIN: 124-871-344]
+[ 2025-02-13 21:37:31,359:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:37:31] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 21:37:31,649:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:37:31] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:37:31,751:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:37:31] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:37:31,765:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:37:31] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:37:31,797:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:37:31] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:38:17,431:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:38:17] "POST /predict HTTP/1.1" 200 -]
+[ 2025-02-13 21:38:17,482:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:38:17] "GET /static/style.css HTTP/1.1" 200 -]
+[ 2025-02-13 21:38:30,441:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:38:30] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 21:38:30,483:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:38:30] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:38:30,484:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:38:30] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:38:30,509:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:38:30] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:38:30,539:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:38:30] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:39:22,676:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:39:22] "POST /predict HTTP/1.1" 200 -]
+[ 2025-02-13 21:39:22,719:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:39:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:39:59,620:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:39:59] "GET / HTTP/1.1" 200 -]
+[ 2025-02-13 21:39:59,653:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:39:59] "[36mGET /static/images/Checklist%20free%20icons%20designed%20by%20Eucalyp.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:39:59,692:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:39:59] "[36mGET /static/images/Healthcare.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:39:59,707:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:39:59] "[36mGET /static/images/Risk%20assessment%20or%20identification%20analysis%20with%20hand%20hold%20magnifier%20and%20exclamation%20mark.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:39:59,728:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:39:59] "[36mGET /static/images/Simple%20And%20Technical%20Style%20Medical%20Safety%20Banner%20Background,%20Medical,%20Security,%20Technology%20Background%20Image%20And%20Wallpaper%20for%20Free%20Download.jpg HTTP/1.1[0m" 304 -]
+[ 2025-02-13 21:43:00,085:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:43:00] "POST /predict HTTP/1.1" 200 -]
+[ 2025-02-13 21:43:00,134:INFO:_internal:127.0.0.1 - - [13/Feb/2025 21:43:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]

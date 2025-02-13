@@ -30,7 +30,7 @@ class ModelTrainer():
         
         # Initialize the model
         model = Sequential([
-            Dense(64,activation='relu'),
+            Dense(64,activation='relu',input_shape=(22,)),
             Dense(64, activation='relu'),
             Dense(2,activation='softmax')
         ])

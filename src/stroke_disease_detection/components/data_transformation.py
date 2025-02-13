@@ -24,7 +24,8 @@ class DataTransformation():
         data = pd.read_csv(transform_data)
         data = data.drop(columns='id',axis=1)
         
-        data['stroke'] = data['stroke'].replace({0:'None-stroke',1:'stroke'})
+        data['stroke'] = data['stroke'].replace({"No":'None-stroke',"yes":'stroke'})
+        data[['hypertension','heart_disease']]=data[['hypertension','heart_disease']].replace({0:'No',1:'Yes'})
     
         X = data.drop(columns='stroke',axis=1)
         Y = data['stroke']
@@ -57,11 +58,15 @@ class DataTransformation():
         # Add this before saving the preprocessor
         os.makedirs(self.config.preprocessor_path, exist_ok=True)
 
+        
+        
+        
+        preprocessor.fit(x_train)
+        
         save_json(preprocessor,os.path.join(self.config.preprocessor_path,'preprocessor.pkl'))
 
+        x_train_transformed = preprocessor.transform(x_train)
         
-        
-        x_train_transformed = preprocessor.fit_transform(x_train)
         smote = SMOTE(sampling_strategy='auto')
         x_train_balanced, y_train_balanced = smote.fit_resample(x_train_transformed, y_train)
         x_test_transformed = preprocessor.transform(x_test)
