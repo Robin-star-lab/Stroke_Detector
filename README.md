@@ -4,17 +4,17 @@ This repository contains an end-to-end machine learning application designed to 
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model Details](#model-details)
-- [Dynamic Parameter Tuning](#dynamic-parameter-tuning)
-- [Dataset](#dataset)
-- [Evaluation](#evaluation)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- Introduction
+- Features
+- Installation
+- Usage
+- Model Details
+- Dynamic Parameter Tuning
+- Dataset
+- Evaluation
+- Contributing
+- License
+- Contact
 
 ## Introduction
 
@@ -34,8 +34,8 @@ Stroke is a serious medical condition requiring immediate attention. This applic
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/yourusername/stroke-detection-app.git](https://www.google.com/search?q=https://github.com/yourusername/stroke-detection-app.git)
-    cd stroke-detection-app
+    git clone [https://github.com/Robin-star-lab/Stroke-Detector.git]
+    cd Stroke-Detector
     ```
 
 2.  **Create a virtual environment (recommended):**
@@ -60,7 +60,7 @@ Stroke is a serious medical condition requiring immediate attention. This applic
     python main.py  # Or whatever your main script is called.
     ```
 
-2.  **Input patient data as  through the UI).**
+2.  **Input patient data as  through the UI.**
 
 3.  **Receive the stroke prediction output.**
 
